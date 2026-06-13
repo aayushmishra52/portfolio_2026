@@ -83,7 +83,7 @@ const Hero = () => {
             className="text-white text-3xl md:text-5xl font-bold mb-4 tracking-tight drop-shadow-lg"
           >
             Hi, I’m <span className="text-red-500">Aayush Mishra</span> <br /> 
-            <span className="text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:1.5px_white]">Software Engineer (AI Systems)</span>
+            <span className="text-transparent [-webkit-text-stroke:1px_white] md:[-webkit-text-stroke:1.5px_white]">Forward Deployed Engineer</span>
           </h1>
 
           {/* Subheading */}
@@ -92,7 +92,7 @@ const Hero = () => {
             data-aos-delay="200"
             className="text-white text-sm md:text-lg font-medium mb-8 max-w-2xl drop-shadow-md opacity-90"
           >
-            AI Automation | Python Developer | Quantitative Technology Enthusiast | Open to Software Engineering & Solutions Engineering Roles
+            Building AI-Powered Solutions | Python & Full-Stack Developer | Customer-Focused Problem Solver | Bridging Technology, Automation & Business Impact
           </p>
 
           {/* Buttons */}
