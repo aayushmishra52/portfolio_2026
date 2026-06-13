@@ -8,7 +8,7 @@ import heroThumbnail from '../assets/hero video/thumbnail.png';
 const Hero = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
 
   useEffect(() => {
     AOS.init({
