@@ -47,13 +47,13 @@ const About = () => {
             </p>
             
             <p className="text-base md:text-lg font-medium leading-relaxed max-w-3xl text-red-50/90">
-              I am a highly motivated Software Engineer (AI Systems) passionate about Quantitative Research, Artificial Intelligence, and Workflow Automation. I enjoy building technology solutions that solve real-world problems through intelligent software systems, automation, and data-driven decision making.
+            I am passionate about solving complex business challenges through software engineering, AI, automation, and cloud technologies. I enjoy collaborating with stakeholders, understanding operational problems, and building end-to-end solutions that deliver measurable outcomes. My focus is on deploying technology where it creates the greatest real-world impact.
             </p>
 
             <div className="bg-black/10 p-6 rounded-2xl border border-black/5 backdrop-blur-sm">
               <h3 className="text-black font-black uppercase text-sm mb-3 tracking-widest">Personal Mission</h3>
               <p className="italic text-red-50 font-semibold leading-relaxed">
-                "To become a world-class Software Engineer proficient in developing and implementing AI systems, combining mathematics, statistics, software engineering, and financial markets to build impactful technologies."
+                "To become a Forward Deployed Engineer capable of translating business needs into scalable software solutions and helping organizations unlock value through technology."
               </p>
             </div>
           </div>
