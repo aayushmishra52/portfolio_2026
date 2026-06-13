@@ -8,7 +8,7 @@ import heroThumbnail from '../assets/hero video/thumbnail.png';
 const Hero = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
 
   useEffect(() => {
     AOS.init({
@@ -16,6 +16,21 @@ const Hero = () => {
       once: true,
       easing: 'ease-out'
     });
+        // Check if video has already played once
+    const hasVideoPlayed = localStorage.getItem('hasVideoPlayed');
+    if (!hasVideoPlayed && videoRef.current) {
+      // Wait a little bit for the page to render, then autoplay
+      const timer = setTimeout(() => {
+        videoRef.current.play().catch(err => {
+          // Autoplay might be blocked by browser, handle gracefully
+          console.log('Autoplay blocked:', err);
+        });
+        setIsPlaying(true);
+        localStorage.setItem('hasVideoPlayed', 'true');
+      }, 1500);
+      
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   const toggleVideo = (e) => {
